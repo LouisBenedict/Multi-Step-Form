@@ -1,26 +1,47 @@
 import React, {useState} from 'react'
-import App from '../App';
 import './Step1.css';
 import Step from '../Components/Step';
+import Step2 from '../Pages/Step2';
+import Step3 from '../Pages/Step3';
+import Step4 from '../Pages/Step4';
 
-const Step1 = ({page, setPage}) => {
+const Step1 = () => {
 
+    const conditionalComponent = (page) => {
+        if(page == 0) {
+            return <Step1 />;
+        } else if(page == 1) {
+            return <Step2 />;
+        } else if(page == 2) {
+            return <Step3 />;
+        } else if(page == 3) {
+            return <Step4 />;
+        } else {
+            console.log('Error: Page not found');
+        }
+    }
+
+    let [page, setPage] = useState(0);
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         phone: '',
     });
 
-    const nextPage = () => setPage = () => page + 1;
-    const prevPage = () => setPage = () => page - 1;
-
-    let submit = () => {
-        console.log('Submitted');
-        console.log(`Page Number: ${page}`);
-        console.log(formData.name);
-        console.log(formData.email);
-        console.log(formData.phone);
-        nextPage();
+    const handleFormData = (e) => {
+        e.preventDefault();
+        setFormData({
+            name: name,
+            email: email,
+            phone: phone,
+        });
+        console.log(formData);
+        setPage = (page) => page + 1;
+        console.log(page);
     }
 
     const FormSteps = {
@@ -66,7 +87,7 @@ const Step1 = ({page, setPage}) => {
             </div>
 
             <div className='right-container'>
-                <form action="#" method='GET' className="form" onSubmit={submit}>
+                <form action="#" method='GET' className="form" onSubmit={handleFormData}>
                     <h1>
                         {FormSteps.Step1.name}
                     </h1>
@@ -125,13 +146,12 @@ const Step1 = ({page, setPage}) => {
                         />
                     </div>
 
-                    <button 
+                    <input
                     type="submit" 
                     value="Next Step"
                     className="btn"
                     >
-                        {page === 0 || page === 1 || page === 2 || page === 3 ? "Next Step" : "Submit"}
-                    </button>
+                    </input>
                 </form>
             </div>
         </div>

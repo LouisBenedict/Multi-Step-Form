@@ -2,7 +2,7 @@ import React from 'react'
 
 const Step3 = () => {
   return (
-    <div>Step3</div>
+    <div>STEP 3</div>
   )
 }
 

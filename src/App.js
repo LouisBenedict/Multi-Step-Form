@@ -1,39 +1,12 @@
 import './App.css';
 import React, {useState} from 'react';
-import Step1 from './Pages/Step1';
-import Step2 from './Pages/Step2';
-import Step3 from './Pages/Step3';
-import Step4 from './Pages/Step4';
+import Conditional from './Components/Conditional';
 
-function App() {
-
-  let [page, setPage] = useState(0);
-
-  const pagenum = () => {
-    console.log(`Page Number: ${page}`);
-  }
-
-  const conditionalComponent = (page) => {
-    if(page == 0) {
-        return <Step1 />;
-    } else if(page == 1) {
-        return <Step2 />;
-    } else if(page == 2) {
-        return <Step3 />;
-    } else if(page == 3) {
-        return <Step4 />;
-    } else {
-        console.log('Error: Page not found');
-    }
-  }
+function App({page, setPage}) {
 
   return (
     <div className="App">
-
-      {/* <ConditionalPage /> */}
-      {conditionalComponent(page)}
-      {pagenum()}
-
+      <Conditional page={page} />
     </div>
   );
 }
