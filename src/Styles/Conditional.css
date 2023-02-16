@@ -1,0 +1,101 @@
+body {
+    background-color:hsl(229, 24%, 87%);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    height: 100%;
+    width: 60%;
+
+    margin: 0 auto;
+    margin-top: 2%;
+
+    display: flex;
+}
+
+form {
+    height: 100%;
+    width: 100%;
+    padding: 4rem;
+    margin: 1rem;
+}
+
+form > h1 {
+    color: hsl(213, 96%, 18%);
+}
+
+form > p {
+    margin-top: -1rem;
+    margin-bottom: 4rem;
+    color:hsl(231, 11%, 63%);
+}
+
+label {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: hsl(213, 96%, 18%);
+}
+
+input {
+    height: 100%;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    border: 1px solid hsl(231, 11%, 63%);
+    border-radius: 5px;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-right: 2rem;
+    padding-left: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    margin: 1rem 0;
+}
+
+.left-container {
+    background-image: url('../Assets/bg-sidebar-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 10px;
+    height: 710px;
+    padding: 40px 20px;
+    width: 50%;
+
+    margin-right: 5rem;
+}
+
+.steps {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* .individual-step {
+    color: white !important;
+} */
+
+.right-container {
+    display: flex;
+    width: 100%;
+}
+
+.btn {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: hsl(213, 96%, 18%);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 1rem 0;
+    max-height: 5%;
+    max-width: fit-content;
+    cursor: pointer;
+}

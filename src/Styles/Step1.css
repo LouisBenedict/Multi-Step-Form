@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+root {
+    background-color: hsl(213, 96%, 18%);
+    font-family: 'Ubuntu', sans-serif;
+
+    /*  - Marine blue: hsl(213, 96%, 18%)
+        - Purplish blue: hsl(243, 100%, 62%)
+        - Pastel blue: hsl(228, 100%, 84%)
+        - Light blue: hsl(206, 94%, 87%)
+        - Strawberry red: hsl(354, 84%, 57%)
+    */
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url('../Assets/bg-sidebar-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .main-container {
+        width: 80%;
+        height: 100%;
+        margin-top: 20%;
+    }
+
+    .btn {
+        position: inherit;
+    }
+
+    .left-container {
+        display: none;
+    }
+
+    .right-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .main-container {
+        width: 80%;
+    }
+
+    .btn {
+        position: inherit;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-container {
+        width: 80%;
+    }
+
+    .btn {
+        position: inherit;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main-container {
+        width: 80%;
+        height: 40rem;
+    }
+
+    .btn {
+        position: inherit;
+    }
+}
