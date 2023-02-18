@@ -1,0 +1,83 @@
+#step3-container {
+    margin-top: 4rem;
+    
+    width: fit-content;
+    height: fit-content;
+}
+
+#step3-right-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#step3-right-container > h1 {
+    color: hsl(213, 96%, 18%);
+}
+
+#step3-right-container > p {
+    margin-top: -1rem;
+    margin-bottom: 4rem;
+    color: hsl(231, 11%, 63%);
+}
+
+
+.add-ons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-ons {
+    margin: 0.5rem 0;
+}
+
+.add-ons-btn {
+    display: flex;
+    align-items: center;
+
+    width: 30rem;
+    height: 4rem;
+
+    background-color: transparent;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.add-ons.active {
+    border: 1px solid hsl(213, 96%, 18%);
+}
+
+.add-ons-btn > input {
+    height: 1.5rem;
+    width: 1.5rem;
+    
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    margin: 0 2rem;
+}
+
+.flex-column > h2 {
+    color:hsl(213, 96%, 18%);
+    font-size: 0.9rem;
+}
+
+.flex-column > p {
+    color: hsl(231, 11%, 63%);
+    font-size: 0.8rem;
+}
+
+.add-ons-price {
+    margin-left: auto;
+    margin-right: 2rem;
+
+    color:hsl(213, 96%, 18%);
+    
+}
