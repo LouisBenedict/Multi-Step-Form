@@ -19,8 +19,9 @@ body {
 form {
     height: 100%;
     width: 100%;
-    padding: 4rem;
-    margin: 1rem;
+    padding: 5rem 0rem;
+    margin-left: 3rem;
+
 }
 
 form > h1 {
@@ -98,4 +99,47 @@ input {
     max-height: 5%;
     max-width: fit-content;
     cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url('../Assets/bg-sidebar-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .main-container {
+        width: 80%;
+        height: 100%;
+        margin-top: 20%;
+    }
+
+    .btn {
+        position: inherit;
+    }
+
+    .left-container {
+        display: none;
+    }
+
+    .right-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .main-container {
+        width: 80%;
+        height: 100%;
+        margin-top: 20%;
+    }
+
+    .left-container {
+        display: none;
+    }
+
+    .right-container {
+        width: 100%;
+    }
 }

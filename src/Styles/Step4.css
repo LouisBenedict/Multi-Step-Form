@@ -92,3 +92,125 @@
 .cart-total-price > h3 {
     color:hsl(213, 96%, 18%);
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 1440px) {
+    #step4-container {
+        margin-top: 2rem;
+    }
+
+    #step4-right-container > h1 {
+        font-size: 1.5rem;
+    }
+
+    #step4-right-container > p {
+        font-size: 0.8rem;
+    }
+
+    .cart-container {
+        width: 100%;
+    }
+
+    .cart-header {
+        width: 100%;
+    }
+
+    .cart-body {
+        width: 100%;
+    }
+
+    .cart-footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #step4-container {
+        margin-top: 2rem;
+    }
+
+    #step4-right-container > h1 {
+        font-size: 1.5rem;
+    }
+
+    #step4-right-container > p {
+        font-size: 0.8rem;
+    }
+
+    .cart-container {
+        width: 100%;
+    }
+
+    .cart-header {
+        width: 100%;
+    }
+
+    .cart-body {
+        width: 100%;
+    }
+
+    .cart-footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #step4-container {
+        margin-top: 2rem;
+    }
+
+    #step4-right-container > h1 {
+        font-size: 1.5rem;
+    }
+
+    #step4-right-container > p {
+        font-size: 0.8rem;
+    }
+
+    .cart-container {
+        width: 100%;
+    }
+
+    .cart-header {
+        width: 100%;
+    }
+
+    .cart-body {
+        width: 100%;
+    }
+
+    .cart-footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #step4-container {
+        margin-top: 2rem;
+    }
+
+    #step4-right-container > h1 {
+        font-size: 1.5rem;
+    }
+
+    #step4-right-container > p {
+        font-size: 0.8rem;
+    }
+
+    .cart-container {
+        width: 100%;
+    }
+
+    .cart-header {
+        width: 100%;
+    }
+
+    .cart-body {
+        width: 100%;
+    }
+
+    .cart-footer {
+        width: 100%;
+    }
+}

@@ -36,7 +36,7 @@
     align-items: center;
 
     width: 30rem;
-    height: 4rem;
+    height: 5rem;
 
     background-color: transparent;
     border: 1px solid hsl(229, 24%, 87%);
@@ -80,4 +80,94 @@
 
     color:hsl(213, 96%, 18%);
     
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1440px) {
+    #step3-container {
+        margin-top: 4rem;
+    }
+
+    #step3-right-container > p {
+        margin-bottom: 4rem;
+    }
+
+    .add-ons-container {
+        width: 100%;
+    }
+
+    .add-ons-btn {
+        width: 100%;
+    }
+
+    .flex-column {
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #step3-container {
+        margin-top: 3rem;
+    }
+
+    #step3-right-container > p {
+        margin-bottom: 3rem;
+    }
+
+    .add-ons-container {
+        width: 100%;
+    }
+
+    .add-ons-btn {
+        width: 100%;
+    }
+
+    .flex-column {
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #step3-container {
+        margin-top: 2rem;
+    }
+
+    #step3-right-container > p {
+        margin-bottom: 2rem;
+    }
+
+    .add-ons-container {
+        width: 100%;
+    }
+
+    .add-ons-btn {
+        width: 100%;
+    }
+
+    .flex-column {
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #step3-container {
+        margin-top: 1rem;
+    }
+
+    #step3-right-container > p {
+        margin-bottom: 1rem;
+    }
+
+    .add-ons-container {
+        width: 100%;
+    }
+
+    .add-ons-btn {
+        width: 100%;
+    }
+
+    .flex-column {
+        margin: 0 1rem;
+    }
 }

@@ -7,7 +7,27 @@ import Information from '../Data/Information';
 import { Steps } from 'antd';
 import '../Styles/Conditional.css'
 
-const Conditional = () => {
+const Conditional = ({switchToggled}) => {
+
+  
+
+
+
+  const [total, setTotal] = useState(0);
+
+  const [summary, setSummary] = useState({
+    plan: '',
+    price: 0,
+    addons: {
+      online: false,
+      storage: false
+    },
+    total: 0
+  });
+
+
+  
+
 
     let [current, setCurrent] = useState(0);
 

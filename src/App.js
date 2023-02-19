@@ -1,12 +1,13 @@
 import './Styles/App.css';
-import React, {useState} from 'react';
+import React from 'react';
 import Conditional from './Components/Conditional';
 
-function App({page, setPage}) {
+function App() {
 
+  
   return (
     <div className="App">
-      <Conditional page={page} />
+      <Conditional />
     </div>
   );
 }
